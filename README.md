@@ -1,8 +1,8 @@
 # Smars Tech Blogs
 
 > [!TIP]
-> Click the link below to goto your favourite part 
-🥰
+> Click the link below to goto your favourite part 🥰
+
 ## Links
 
 - Link to the Topic: [Cloud Data Storage](#cloud-data-storage).
