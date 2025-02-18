@@ -4,7 +4,7 @@
 
 [SparkSQL approx\_count\_distinct aggregate function](https://docs.databricks.com/en/sql/language-manual/functions/approx_count_distinct.html)
 
-# **The Problem with** `**COUNT(DISTINCT col)**`
+# **The Problem with** `COUNT(DISTINCT col)`
 
 By default, `COUNT(DISTINCT col)` **scans all data and removes duplicates**, which causes:
 
@@ -12,7 +12,7 @@ By default, `COUNT(DISTINCT col)` **scans all data and removes duplicates**, whi
 *   **High computational cost** – requires full deduplication.
 *   **Performance bottlenecks** – when the dataset is large, Spark needs to shuffle data between nodes, slowing down the query.
 
-# **Why is** `**APPROX_COUNT_DISTINCT(col)**` **Faster?**
+# **Why is** `APPROX_COUNT_DISTINCT(col)` **Faster?**
 
 Instead of **exactly counting distinct values**, `APPROX_COUNT_DISTINCT()` uses an efficient **HyperLogLog (HLL)** algorithm.
 
@@ -56,7 +56,7 @@ Assume the `Activity` table has **10 million rows**:
 *   `COUNT(DISTINCT player_id)` → **Takes 10 seconds** (due to full deduplication and shuffle).
 *   `APPROX_COUNT_DISTINCT(player_id)` → **Takes 1 second** (with only a ~1% error).
 
-# **When to Use** `**APPROX_COUNT_DISTINCT()**`
+# **When to Use** `APPROX_COUNT_DISTINCT()`
 
 *   When working with **big data (millions or billions of records)**.
 *   When **a small error (1-2%) is acceptable**.
