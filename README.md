@@ -20,7 +20,10 @@
 ### Data Lakehosue
 
 ### Cloud Data Storage
+
 [Decoupling from Hadoop: Storage-Compute Separation and K8s-Based Cloud Data Engineering (English & Mandarin)](topic-1-cloud-data-storage/blog1.md)
 
 ### SQL
+
+[Why is APPROX\_COUNT\_DISTINCT() Faster in SparkSQL?](topic-5-sql/blog1.md)
 
