@@ -2,6 +2,8 @@
 
 > [!TIP]
 > Click the link below to goto your favourite part 🥰
+>
+> 👉 click this link to read them in my blogger: [smars.online/tech-blogs](https://www.smars.online/tech-blogs)
 
 ## Links
 
